@@ -6,3 +6,6 @@ It uses Phonetisaurus; of the various grapheme-to-phoneme converters, Phonetisau
 `syllabify-phonetisaurus-output.ipynb` syllabifies the output of Phonetisaurus, as above. Parts of it are a reimplementation of [this script](http://web.archive.org/web/20100614180508/http://semarch.linguistics.fas.nyu.edu/barker/Syllables/syllabify.pl)
 
 It has no external dependencies.
+
+
+`make_fsa_pdf.ipynb` is the notebook used to create the FSA/graph illustration, figure 2. It uses lttoolbox (from Apertium) to create an initial transducer, OpenFST to relabel the arcs and convert it to GraphViz, and GraphViz to create a PDF.
